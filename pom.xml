@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.gov.sp.fatec</groupId>
-	<artifactId>spingbootlab1</artifactId>
+	<artifactId>Lab14sem2025</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spingbootlab1</name>
-	<description>Lab de exemplo para primeira prova</description>
+	<name>Lab14sem2025</name>
+	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
