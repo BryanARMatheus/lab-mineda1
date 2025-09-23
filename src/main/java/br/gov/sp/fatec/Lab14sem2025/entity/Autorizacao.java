@@ -9,7 +9,6 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import br.gov.sp.fatec.Lab14sem2025.entity.Usuario;
 
 @Entity
 @Table(name = "aut_autorizacao")

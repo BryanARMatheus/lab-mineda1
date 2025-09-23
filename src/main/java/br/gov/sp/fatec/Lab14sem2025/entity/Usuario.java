@@ -1,6 +1,8 @@
 package br.gov.sp.fatec.Lab14sem2025.entity;
 
 import java.util.List;
+import java.util.Set;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -35,17 +37,16 @@ public class Usuario {
 
     @OneToMany(mappedBy = "usuario", fetch = FetchType.LAZY)
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    private List<Anotacao> anotacoes;
+    private Set<Anotacao> anotacoes;
 
     @ManyToMany
     @JoinTable(name = "uau_usuario_autorizacao",
         joinColumns = {@JoinColumn(name = "usr_id")},
         inverseJoinColumns = {@JoinColumn(name = "aut_id")})
-    private List<Autorizacao> autorizacoes;
+    private Set<Autorizacao> autorizacoes;
 
     public Usuario() { }
         public Usuario(String nome, String senha) {
-        this();
         this.nome = nome;
         this.senha = senha;
     }
@@ -58,6 +59,18 @@ public class Usuario {
         this.id = id;
     }
 
+    public Set<Anotacao> getAnotacoes() {
+        return anotacoes;
+    }
+    public void setAnotacoes(Set<Anotacao> anotacoes) {
+        this.anotacoes = anotacoes;
+    }
+    public Set<Autorizacao> getAutorizacoes() {
+        return autorizacoes;
+    }
+    public void setAutorizacoes(Set<Autorizacao> autorizacoes) {
+        this.autorizacoes = autorizacoes;
+    }
     public String getNome() {
         return nome;
     }
