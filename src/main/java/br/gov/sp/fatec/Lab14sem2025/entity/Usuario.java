@@ -1,6 +1,5 @@
 package br.gov.sp.fatec.Lab14sem2025.entity;
 
-import java.util.List;
 import java.util.Set;
 
 import jakarta.persistence.Column;
@@ -17,8 +16,6 @@ import jakarta.persistence.JoinColumn;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import br.gov.sp.fatec.Lab14sem2025.entity.Anotacao;
-import br.gov.sp.fatec.Lab14sem2025.entity.Autorizacao;
 
 @Entity
 @Table(name = "usr_usuario")
